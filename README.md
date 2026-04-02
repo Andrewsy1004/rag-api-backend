@@ -1,4 +1,4 @@
-# 🩺 MaterniAI — RAG-based Obstetric Assistant API
+# 🩺 MaterniAI RAG-based Obstetric Assistant API
 
 An AI powered obstetric assistant that provides clinical guidance on maternal health using local evidence from the Colombian context. Built with Retrieval-Augmented Generation (RAG), it retrieves relevant information from uploaded clinical documents and generates grounded answers using OpenAI, reducing hallucinations and ensuring responses are backed by verifiable sources.
 
