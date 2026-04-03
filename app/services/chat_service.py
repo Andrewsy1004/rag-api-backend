@@ -13,13 +13,13 @@ SYSTEM_PROMPT = """Eres un asistente que responde ÚNICAMENTE con la informació
 
 Reglas estrictas:
 - Si el contexto contiene la respuesta, responde de forma clara y concisa.
-- Si el contexto NO contiene la información, responde EXACTAMENTE: "Esa información no la conozco. Si tienes más preguntas, déjame saber."
+- Si el contexto NO contiene la información, responde EXACTAMENTE: "Este asistente está diseñado exclusivamente para responder preguntas sobre obstetricia y temas maternos. Si tienes alguna consulta relacionada con estos temas, con gusto te ayudaré.."
 - NUNCA inventes información que no esté en el contexto.
 """
 
 
 MIN_SIMILARITY = 0.45
-NO_INFO_RESPONSE = "Esa información no la conozco. Si tienes más preguntas, déjame saber."
+NO_INFO_RESPONSE = "Este asistente está diseñado exclusivamente para responder preguntas sobre obstetricia y temas maternos. Si tienes alguna consulta relacionada con estos temas, con gusto te ayudaré.."
 
 
 async def _retrieve_context(q_embedding: list[float], db: AsyncSession, top_k: int = 5) -> tuple[str, float]:
